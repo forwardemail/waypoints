@@ -30,5 +30,8 @@
     "merge-stream": "^0.1.1",
     "testem": "0.6.24"
   },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
+  },
   "license": "MIT"
 }

@@ -93,7 +93,7 @@
     var nsTypeList = nsHandlers[eventType] = nsHandlers[eventType] || []
 
     nsTypeList.push(handler)
-    this.element.addEventListener(eventType, handler)
+    this.element.addEventListener(eventType, handler, { passive: true })
   }
 
   NoFrameworkAdapter.prototype.outerHeight = function(includeMargin) {
